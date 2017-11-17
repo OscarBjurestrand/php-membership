@@ -5,11 +5,11 @@ This file isn't going to be available in the release.
 
 -- login page --
 input username, password
-button login, register
+button login -> membership, register -> register page
 
 -- register page --
 register username, password
-button register, cancel -> login page
+button register -> login page, cancel -> login page
 
 -- membership --
 bigger con
@@ -23,7 +23,7 @@ add location
 add favorite language(s)
 add bio
 add profile picture
-button back -> membership, logout -> login page
+button back -> membership, logout -> (alert user that they are being logged out in 'x' seconds) -> login page
 
 -- display other user page --
 display user picture + information
