@@ -6,6 +6,7 @@ This file isn't going to be available in the release.
 -- login page --
 input username, password
 button login -> membership, register -> register page
+(about link -> about page)
 
 -- register page --
 register username, password
