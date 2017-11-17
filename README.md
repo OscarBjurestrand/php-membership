@@ -26,8 +26,11 @@ An user will look something like this in the database:
 5. Enter any user credentials and press submit.
 6. See your created user in the `users` table.
 ---
-**Update - Version 1**
-- SQL file was added and is configured to add table `users` with schema: `| ID | Username | Password |`.   
-The file will also add `ID` as the primary key with `AUTO_INCREMENT`.  
-- Forms require both username and password before submitting.  
-- Added client-side validation for the username field.
+**Version 1**
+- Updates
+  - SQL file was added and is configured to add table `users` with schema: `| ID | Username | Password |`.   
+  The file will also add `ID` as the primary key with `AUTO_INCREMENT`.  
+  - Forms require both username and password before submitting.  
+  - Added client-side validation for the username field.
+- **TODO**
+  - Prevent SQL-injections
