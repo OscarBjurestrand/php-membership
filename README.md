@@ -1,7 +1,7 @@
 # Membership
 This membership system is written in PHP 7.  
   
-The only thing you will need to configure is the credentials in `connect.php`.  
+The only thing you will need to configure are the credentials in `connect.php`.  
 It is now configured to connect with `localhost` using the default credentials.  
   
 Change these default credentials to fit your own:
