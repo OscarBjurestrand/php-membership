@@ -8,7 +8,7 @@
 <div class="wrapper">
 	<div class="main-con">
 		<section class="con-header">
-			<h1>User Login</h1>
+			<h1>dev-net</h1>
 		</section>
 		<section class="content">
 			<form>

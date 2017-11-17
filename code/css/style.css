@@ -17,7 +17,8 @@ html, body {
 	display: flex;
   	align-items: center;
   	justify-content: center;
-  	background-image: url(../../images/bg.jpg);
+  	background-color: #2c3e50;
+  	/*background-image: url(../../images/bg.jpg);*/
   	background-repeat: no-repeat;
   	background-size: cover;
 }
