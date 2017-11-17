@@ -1,0 +1,29 @@
+**READ ME**
+This file is only to keep track of future plans.
+This file isn't going to be available in the release.
+***********
+
+-- login page --
+input username, password
+button login, register
+
+-- register page --
+register username, password
+button register, cancel -> login page
+
+-- membership --
+bigger con
+number of users registred
+button settings -> settings page, logout -> login page
+search for other users -> display other user page
+
+-- settings page --
+add name
+add location
+add favorite language(s)
+add bio
+add profile picture
+button back -> membership, logout -> login page
+
+-- display other user page --
+display user picture + information
