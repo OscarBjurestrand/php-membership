@@ -16,7 +16,7 @@ Passwords are automatically hashed with `password_hash('password', PASSWORD_DEFA
 An user will be inserted into the database with an ID, username, and a hashed password.   
   
 An user will look something like this in the database:  
-`| 148 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
+`| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
   
 **How to set up this project with localhost:**
 1. Copy the php-membership folder to `../xampp/htdocs`.
