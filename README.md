@@ -7,7 +7,7 @@ And if not, I will try my best to update it.
   
 You can [review the code](https://github.com/OscarBjurestrand/php-membership/wiki/Review-the-code) if you are new to PHP but still want to use php-membership. 
     
-This system is not very pretty and has only the required styling in order to show you all the different functions.  
+This system is not very pretty on the outside and has only the required styling in order to show you all the different functions.  
 I created it this way so you can start building on it right away without deleting a bunch of styling.
   
 I am a junior developer and this code is [licensed without warranty](https://github.com/OscarBjurestrand/php-membership/blob/master/LICENSE).  
