@@ -12,9 +12,9 @@ Php-membership is able to:
 - Delete users.
 - Log-in with user.
 - Log-out with user.
-- Create members-only areas.
+- Use members-only areas.
 - Check if an user is logged in.
-- Create different types of memberships (type 1, type 2, administrator).
+- Use different types of memberships (type 1, type 2, administrator).
   
 # Installation  
   
