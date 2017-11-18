@@ -2,7 +2,7 @@
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not so easy...  
   
-Php-membership is a open-source project with the purpose of providing a secure foundation for a website that is using member areas.  
+Php-membership is an open-source project with the purpose of providing a secure foundation for a website that is using member areas.  
 This system is 100% safe from SQL-injections and it validates all data that is sent from the client.  
 My goal with php-membership is to provide a simple, secure, and scalable base for your website.  
 It is easy to deploy even with no previous knowledge about membership systems.
