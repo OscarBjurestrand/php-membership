@@ -1,6 +1,5 @@
 # Versions of php-membership
 All versions of php-membership can be viewed here.  
-Changelogs are available as well.  
 **Current version is not secure.**
   
 **Versions**
