@@ -1,5 +1,5 @@
 # Membership
-Please visit the [wiki for this system](https://github.com/OscarBjurestrand/php-membership/wiki) before implementing php-membership to your website.  
+Please visit the [wiki for this system](https://github.com/OscarBjurestrand/php-membership/wiki) before using php-membership on your website.  
   
 The only thing you will need to configure are the credentials in `connect.php`.  
 It is now configured to connect with `localhost` using the default credentials.  
