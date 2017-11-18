@@ -49,7 +49,7 @@ An user will look something like this in the database:
   
 **How to set up this project with your server:**
 1. Import `/php-membership/code/sql/users.sql` to your database.
-2. Upload `php-membership` to your server.
+2. Upload php-membership to your server.
 2. Open `YOUR HOST HERE/php-membership/code/php/index.php` in your browser. 
   
 # Security
