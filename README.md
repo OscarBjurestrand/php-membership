@@ -1,4 +1,3 @@
-| [Insallation](#installation) | [Requirements](#requirements) | [Releases](https://github.com/OscarBjurestrand/php-membership/releases) | [Security](#security)
 # What is php-membership?
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not so easy...  
