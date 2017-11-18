@@ -2,9 +2,6 @@
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not very easy...  
   
-The purpose of this project was to create a fully functioning and secure system that can be used by users with basic PHP knowledge.  
-Php-membership was created November 2017 on the 7th version of PHP.
-  
 My goal with php-membership is to provide a complete and secure base for your website to be built upon when using member areas. I also want to let users know if this system is up-to-date with the latest version of PHP and is secure against SQL-injections. Therefore, I will mention if this system is secure or not in the [version history](https://github.com/OscarBjurestrand/php-membership/wiki/Version-history).  
 And if not, I will try my best to update it.  
   
