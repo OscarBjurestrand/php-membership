@@ -34,3 +34,5 @@ An user will look something like this in the database:
   - Added client-side validation for the username field.
 - **TODO**
   - Prevent SQL-injections
+  - Add membership area
+  - Add `$_SESSION` with logged in/out function
