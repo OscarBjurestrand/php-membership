@@ -1,6 +1,6 @@
 # What is php-membership?
 A website with member areas? Easy.  
-A website with _secure_ member areas? Not very easy...  
+A website with _secure_ member areas? Not so easy...  
   
 My goal with php-membership is to provide a complete and secure base for your website to be built upon when using member areas. I also want to let users know if this system is up-to-date with the latest version of PHP and is secure against SQL-injections. Therefore, I will mention if this system is secure or not in the [version history](https://github.com/OscarBjurestrand/php-membership/wiki/Version-history).  
 And if not, I will try my best to update it.  
