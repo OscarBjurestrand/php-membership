@@ -1,5 +1,5 @@
 # Membership
- [![CODE NOT SECURE)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg?style=plastic)]() This code is not yet secure. Do not use without caution.
+ [![CODE NOT SECURE)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg?style=plastic)]() This code is not secure. Do not use without caution.
 
 The only thing you will need to configure are the credentials in `connect.php`.  
 It is now configured to connect with `localhost` using the default credentials.  
