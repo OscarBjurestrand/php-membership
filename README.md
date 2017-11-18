@@ -1,4 +1,4 @@
-| [HOME]("what-is-php-membership) | 
+| [HOME](#what-is-php-membership) | 
 # What is php-membership?
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not so easy...  
