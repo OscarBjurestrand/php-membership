@@ -3,7 +3,7 @@ A website with member areas? Easy.
 A website with _secure_ member areas? Not so easy...  
   
 Php-membership is an open-source project that provides a simple, secure, and scalable membership system for your website.
-This system is 100% safe from SQL-injections and it validates all data that is sent from the client.    
+This system is 100% secure and it validates all data that is sent from the client.    
 It is easy to deploy even with no previous knowledge about membership systems.
   
   
