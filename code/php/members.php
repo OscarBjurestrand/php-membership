@@ -17,9 +17,11 @@ if ($result = $conn->query($query)) {
 
 /* compare user-input password with correct password */
 if ($_POST['Password'] == password_verify($_POST['Password'], $fetched_hash)) {
-	echo "correct password";
+	echo "<p>You successfully logged in!</p>";
+	echo "<a href='index.php'>Register another user</a>";
 }
 else {
-	echo "incorrect password!";
+	echo "<p>Incorrect username or password.</p>";
+	echo "<a href='login.php'>Try again</a>";
 }
 ?>

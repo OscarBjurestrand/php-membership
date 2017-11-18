@@ -1,11 +1,18 @@
-<form action="test_pass.php" method="post">
-	<input type="text" name="Username" placeholder="username" required="">
-	<input type="text" name="Password" placeholder="password" required="">
-	<input type="submit">
-</form>
-<button onclick="printTest()"></button>
-<?php 
-	function printTest() {
-		echo "hello!";
-	}
- ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<fieldset style="display: inline;">
+		<legend>Login</legend>
+			<form action="members.php" method="post">
+				<input type="text" name="Username" placeholder="Username" required="">
+				<input type="password" name="Password" placeholder="Password" required="">
+				<input type="submit">
+			</form>
+	</fieldset>
+	<p>Not registred?</p>
+	<a href="index.php">Register</a>
+</body>
+</html>
