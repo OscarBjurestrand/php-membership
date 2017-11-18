@@ -19,7 +19,7 @@ An user will look something like this in the database:
 `| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
   
 **How to set up this project with localhost:**
-1. Copy the php-membership folder to `../xampp/htdocs`.
+1. Copy the php-membership folder to `/xampp/htdocs`.
 2. Start Apache and MySQL.
 3. Import `/php-membership/code/sql/users.sql` to your database.
 4. Open `localhost/php-membership/code/php/index.php` in your browser.
