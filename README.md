@@ -31,8 +31,9 @@ An user will look something like this in the database:
   - SQL file was added and is configured to add table `users` with schema: `| ID | Username | Password |`.   
   The file will also add `ID` as the primary key with `AUTO_INCREMENT`.  
   - Forms require both username and password before submitting.  
-  - Added client-side validation for the username field.
+  - Added client-side validation for the username field.  
+    
 - **TODO**
-  - Prevent SQL-injections
-  - Add membership area
-  - Add `$_SESSION` with logged in/out function
+  - Prevent SQL-injections.
+  - Add membership area.
+  - Add `$_SESSION` with logged in/out function.
