@@ -51,4 +51,8 @@ An user will look something like this in the database:
 1. Import `/php-membership/code/sql/users.sql` to your database.
 2. Open `YOUR HOST HERE/php-membership/code/php/index.php` in your browser.
 3. Enter any user credentials and press submit.
-4. See your created user in the `users` table.
+4. See your created user in the `users` table.  
+  
+# Security
+  
+# License
