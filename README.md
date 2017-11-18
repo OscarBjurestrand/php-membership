@@ -31,7 +31,7 @@ An user will look something like this in the database:
 `| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
   
 **How to set up this project with your server:**
-1.. Import `/php-membership/code/sql/users.sql` to your database.
+1. Import `/php-membership/code/sql/users.sql` to your database.
 2. Open `localhost/php-membership/code/php/index.php` in your browser.
 3. Enter any user credentials and press submit.
 4. See your created user in the `users` table.
