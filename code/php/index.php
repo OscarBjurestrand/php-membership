@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add data</title>
+	<title>Welcome</title>
 </head>
 <body>
 	<div style="display: inline-block;">
