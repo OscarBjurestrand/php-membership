@@ -3,7 +3,7 @@ All versions of php-membership can be viewed here.
 Changelogs are available as well.  
   
 **Versions**
-- [Version 1.0](#version-1)
+- [Version 1.0](#1.0)
 ## 1.0
 This is the initial code published to my repository. You are able to create users with a hashed password and successfully add it to the database. **This version is not secure.**  
   
@@ -21,6 +21,7 @@ However, this version is missing protection against SQL-injection and can theref
 Creating two or more users with the same username is possible.   
 There is also no members area to see if an user is logged in or not.  
   
+***
 
 - Updates
   - SQL file was added and is configured to add table `users` with schema: `| ID | Username | Password |`.   
