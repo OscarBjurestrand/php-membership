@@ -6,6 +6,15 @@ Php-membership is an open-source project that provides a simple, secure, and sca
 This system is 100% secure and it validates all data that is sent from the client.    
 It is easy to deploy even with no previous knowledge about membership systems.
   
+# Functionallity
+Php-membership is able to:
+- Create users.
+- Delete users.
+- Log-in with user.
+- Log-out with user.
+- Create members-only areas.
+- Check if an user is logged in.
+- Create different types of memberships (type 1, type 2, administrator).
   
 # Installation  
   
