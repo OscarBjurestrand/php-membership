@@ -1,5 +1,6 @@
-[Functionallity](#functionallity) | [Installation](#installation) | [Security](#security) | [License](#license)
 # What is php-membership?
+[Functionallity](#functionallity) | [Installation](#installation) | [Security](#security) | [License](#license)  
+
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not so easy...  
   
