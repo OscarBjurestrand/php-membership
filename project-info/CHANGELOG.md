@@ -1,11 +1,12 @@
 # Versions of php-membership
 All versions of php-membership can be viewed here.  
 Changelogs are available as well.  
+**Current version is not secure.**
   
 **Versions**
 - [Version 1.0](#1.0)
 ## 1.0
-This is the initial code published to my repository. You are able to create users with a hashed password and successfully add it to the database. **This version is not secure.**  
+This is the initial code published to my repository. You are able to create users with a hashed password and successfully add it to the database.  
   
 You are also able to "login" (try the user with the password stored in the database).
 And if the password matches the one in the database it will display a simple "You successfully logged in!" in the browser. 
