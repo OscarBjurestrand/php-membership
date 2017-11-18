@@ -15,8 +15,7 @@ This system is not very pretty and has only the required HTML-code in order for 
 I am a junior developer and this code is [licensed without warranty](https://github.com/OscarBjurestrand/php-membership/blob/master/LICENSE).  
 **Review this code before using it on a system with sensetive data.** 
   
-# Membership
-Please read the [wiki for this system](https://github.com/OscarBjurestrand/php-membership/wiki) if this is your first time visiting.  
+# Installation  
   
 The only thing you will need to configure are the credentials in `connect.php`.  
 It is now configured to connect with `localhost` using the default credentials.  
