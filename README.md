@@ -1,5 +1,5 @@
 # What is php-membership?
-[Functionallity](#functionallity) | [Installation](#installation) | [Security](#security) | [License](#license)  
+[Releases](https://github.com/OscarBjurestrand/php-membership/releases) | [Functionallity](#functionallity) | [Installation](#installation) | [Security](#security) | [License](#license)  
 
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not so easy...  
