@@ -27,7 +27,7 @@ else {
     //declare $fetched_hash
     $fetched_hash = '';
 
-    //grab the result object from the database
+    //grab the result object from the database if the connection was successful
     if ($result = $conn->query($query)) {
 
         //fetch the password from the object array
@@ -37,6 +37,11 @@ else {
 
         //free the memory stored in $result
         $result->close();
+    }
+    else {
+        echo "<p>User was not logged in.</p>";
+        echo "Error" . mysqli_error();
+        echo "<a href='login.php'>Try again</a>";
     }
 
     //compare $post_password with the hashed password
