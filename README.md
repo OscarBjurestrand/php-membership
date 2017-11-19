@@ -64,4 +64,12 @@ The user cannot submit the data unless they follow this set of rules:
 - `pattern="[a-zA-Z0-9-]+"`  
 Username must only contain letters and numbers.  
 - `required`  
-Username and Password cannot be empty.
+Username and Password cannot be empty.  
+  
+### Server-side validation
+You need to make sure that all data sent from the client is safe before reaching the database.  
+Php-membership uses different methods of protecting your database from malicious data.  
+- `SET NAMES utf8mb4`  
+Before making a query, php-membership tells your RDBMS to expect the data to be sent with the utf8mb4 character set.  
+-`stripslashes()`  
+Php-membership un-quotes a quoted string before using it. 
