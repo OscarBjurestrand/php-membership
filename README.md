@@ -1,5 +1,5 @@
 # What is php-membership?
-[Releases](https://github.com/OscarBjurestrand/php-membership/releases) | [Functionallity](#functionallity) | [Installation](#installation) | [Security](#security) | [License](#license)  
+[Releases](https://github.com/OscarBjurestrand/php-membership/releases) | [Functionallity](#functionallity) | [Installation](#installation) | [Requirements](#requirements)| [Security](#security) | [License](#license)  
 
 A website with member areas? Easy.  
 A website with _secure_ member areas? Not so easy...  
@@ -54,6 +54,8 @@ An user will look something like this in the database:
 2. Upload php-membership to your server.
 2. Open `YOUR HOST HERE/php-membership/code/php/index.php` in your browser. 
   
+# Requirements
+
 # Security
   
 # License
