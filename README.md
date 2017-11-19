@@ -61,6 +61,7 @@ You should never trust data from a client because an user can use other clients 
 The only client-side validation are the input fields in register.php and login.php.  
   
 The user cannot submit the data unless they follow this set of rules:  
-- Username cannot be empty.
-- Password cannot be empty.
-- Username must only contain letters and numbers.
+- `pattern="[a-zA-Z0-9-]+"`  
+Username must only contain letters and numbers.  
+- `required`  
+Username and Password cannot be empty.
