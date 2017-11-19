@@ -41,7 +41,7 @@ $dbname = 'users'; //database name
   
 # Requirements
 The minimal requirements for using the latest version of php-membership are:
-- PHP 5.0.0
+- PHP 5.3.7.
   
 # Security
 ### Client-side validation
