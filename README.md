@@ -55,7 +55,9 @@ An user will look something like this in the database:
 2. Open `YOUR HOST HERE/php-membership/code/php/index.php` in your browser. 
   
 # Requirements
-
+The minimal requirements for using the latest version of php-membership are:
+- PHP 5.0.0
+  
 # Security
   
 # License
