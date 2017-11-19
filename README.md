@@ -76,4 +76,8 @@ Un-quotes a quoted string before using it.
 - `mysqli_real_escape_string()`  
 Removes any special characters in a string before using it.  
 - `empty()`  
-Php-membership checks if the fields somehow ended up being sent empty after the client-side validation.
+Php-membership checks if the fields somehow ended up being sent empty after the client-side validation.  
+- `ctype_alnum()`  
+Php-membership checks if the data only contains letters and numbers.  
+  
+### password_hash()
