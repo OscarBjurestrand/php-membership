@@ -70,7 +70,7 @@ Php-membership checks if the fields somehow ended up being sent empty after the 
 - `ctype_alnum()`  
 Php-membership checks if the data only contains letters and numbers.  
 - `mysqli_prepare()`  
-Php-membership uses (prepared statements)[http://php.net/manual/en/mysqli.quickstart.prepared-statements.php] which sends a prepared query template to you DBMS before executing the query.
+Php-membership uses [prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php) which sends a prepared query template to you DBMS before executing the query.
   
 ### Secure password storage
 Php-membership uses the [password_hash()](http://php.net/manual/en/function.password-hash.php) function to store passwords in the database.  
