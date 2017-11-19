@@ -60,7 +60,7 @@ Username and Password cannot be empty.
 You need to make sure that all data sent from the client is safe before reaching the database.  
 Php-membership uses different methods of protecting your database from malicious data.  
 - `SET NAMES utf8mb4`  
-Before making a query, php-membership tells your RDBMS to expect the data to be sent with the utf8mb4 character set.  
+Before making a query, php-membership tells your DBMS to expect the data to be sent with the utf8mb4 character set.  
 - `stripslashes()`  
 Un-quotes a quoted string before using it. 
 - `mysqli_real_escape_string()`  
