@@ -10,6 +10,6 @@ $conn = new mysqli($host, $user, $pass, $dbname);
 // Check connection
 if (mysqli_connect_errno()) {
     printf("Connect failed: ", mysqli_connect_error());
-    exit();
+    die();
 }
 ?>
