@@ -71,7 +71,7 @@ Php-membership checks if the fields somehow ended up being sent empty after the 
 Php-membership checks if the data only contains letters and numbers.  
   
 ### Secure password storage
-Php-membership uses the PHP [password_hash()](http://php.net/manual/en/function.password-hash.php) function to store passwords in the database.  
+Php-membership uses the [password_hash()](http://php.net/manual/en/function.password-hash.php) function to store passwords in the database.  
   
 Passwords are automatically hashed with `password_hash($post_password, CRYPT_BLOWFISH)` when an user is successfully submitted.  
 An user will look something like this in the database:  
