@@ -50,7 +50,7 @@ else {
 	}
 
 	//check if username exists or not
-	if ($result = $stmt->execute()) {
+	if ($stmt->execute()) {
 
 		//if the statement fetches anything but zero, then another user with the same username exists
 		if ($stmt->fetch() != 0) {
