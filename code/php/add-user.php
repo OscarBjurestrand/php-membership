@@ -26,6 +26,11 @@ elseif (empty($post_password)) {
 	echo "<p>The password field cannot be empty!</p>";
 	echo "<a href='register.php'>Return</a>";
 }
+//checks if the username is allowed (only letters and numbers)
+elseif (!ctype_alnum($post_username)) {
+    echo "<p>Username must only contain letters and numbers.</p>";
+    echo "<a href='login.php'>Try again</a>";
+}
 else {
 	//create query for username search
 	$query = "SELECT Username FROM users WHERE Username = '$post_username'";
