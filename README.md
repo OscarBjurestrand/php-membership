@@ -78,8 +78,6 @@ Php-membership checks if the data only contains letters and numbers.
 Php-membership is using the PHP `password_hash()` function to store passwords in the database.  
   
 Passwords are automatically hashed with `password_hash('password', PASSWORD_DEFAULT)` when an user is successfully submitted.  
-An user will be inserted into the database with an ID, username, and a hashed password.   
-  
 An user will look something like this in the database:  
 `| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
   
