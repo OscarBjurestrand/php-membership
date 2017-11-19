@@ -57,9 +57,10 @@ The minimal requirements for using the latest version of php-membership are:
 ### Client-side validation
 Validation of client-submitted data is only added because of better user experience.  
 The user may not have a web browser that support the use of `required` and `pattern` for HTML forms.  
-You should never trust the client because an user can use other clients than a web-browser to submit data.  
+You should never trust data from a client because an user can use other clients than a web-browser to submit data.  
 The only client-side validation are the input fields in register.php and login.php.  
-The user cannot submit the data unless they follow these set of rules:  
+  
+The user cannot submit the data unless they follow this set of rules:  
 - Username cannot be empty.
 - Password cannot be empty.
 - Username must only contain letters and numbers.
