@@ -72,4 +72,8 @@ Php-membership uses different methods of protecting your database from malicious
 - `SET NAMES utf8mb4`  
 Before making a query, php-membership tells your RDBMS to expect the data to be sent with the utf8mb4 character set.  
 - `stripslashes()`  
-Php-membership un-quotes a quoted string before using it. 
+Un-quotes a quoted string before using it. 
+- `mysqli_real_escape_string()`  
+Removes any special characters in a string before using it.  
+- `empty()`  
+Php-membership checks if the fields somehow ended up being sent empty after the client-side validation.
