@@ -38,12 +38,6 @@ $pass = NULL; //database password
 $dbname = 'users'; //database name
 ```  
   
-Passwords are automatically hashed with `password_hash('password', PASSWORD_DEFAULT)`.  
-An user will be inserted into the database with an ID, username, and a hashed password.   
-  
-An user will look something like this in the database:  
-`| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
-  
 **How to set up this project with your server:**
 1. Import `/php-membership/code/sql/users.sql` to your database.
 2. Upload php-membership to your server.
@@ -80,4 +74,10 @@ Php-membership checks if the fields somehow ended up being sent empty after the 
 - `ctype_alnum()`  
 Php-membership checks if the data only contains letters and numbers.  
   
-### password_hash()
+### Secure password storage
+Php-membership is using the PHP `password_hash()` function to store passwords in the database.  
+Passwords are automatically hashed with `password_hash('password', PASSWORD_DEFAULT)` when successfully submitted.  
+An user will be inserted into the database with an ID, username, and a hashed password.   
+  
+An user will look something like this in the database:  
+`| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
