@@ -1,3 +1,10 @@
+<?php 
+/*
+MIT License
+Copyright (c) 2017 Oscar Bjurestrand
+https://github.com/OscarBjurestrand/php-membership/blob/master/LICENSE
+*/
+ ?>
 <?php @include 'connect.php' ?>
 <?php 
 //this page checks if an user is logged in or not
