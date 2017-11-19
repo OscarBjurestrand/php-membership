@@ -9,7 +9,7 @@ This system is 100% secure and it validates all data that is sent from the clien
 It is easy to deploy even with no previous knowledge about membership systems.
   
 # Functionallity
-Php-membership is able to:
+Php-membership 1.0.0 is able to:
 - Create users.  
   You are able to register users with an username and password from the client.   
 - Log-in with user.  
