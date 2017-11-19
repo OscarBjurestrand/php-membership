@@ -73,7 +73,7 @@ Php-membership checks if the data only contains letters and numbers.
 Php-membership is using [prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php) which sends a prepared query template to you DBMS before executing the query.
   
 ### Secure password storage
-Php-membership uses the [password_hash()](http://php.net/manual/en/function.password-hash.php) function to store passwords in the database.  
+Php-membership uses the [password_hash](http://php.net/manual/en/function.password-hash.php) function to store passwords in the database.  
   
 Passwords are automatically hashed with `password_hash($post_password, PASSWORD_DEFAULT)` when an user is successfully submitted.  
 An user will look something like this in the database:  
