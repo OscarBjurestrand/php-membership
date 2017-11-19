@@ -71,5 +71,5 @@ You need to make sure that all data sent from the client is safe before reaching
 Php-membership uses different methods of protecting your database from malicious data.  
 - `SET NAMES utf8mb4`  
 Before making a query, php-membership tells your RDBMS to expect the data to be sent with the utf8mb4 character set.  
--`stripslashes()`  
+- `stripslashes()`  
 Php-membership un-quotes a quoted string before using it. 
