@@ -83,5 +83,5 @@ An user will be inserted into the database with an ID, username, and a hashed pa
 An user will look something like this in the database:  
 `| 1 | JamesBond16 | $2y$10$ZClCKTG4SGFna9fXUTYkvOrM6AcKZtevdL8n2kzOBZtb4xXV6zhy6 |`  
   
-This prevents an attacker from retrieving passwords even if they are able to view the database table.  
+**This prevents an attacker from retrieving passwords even if they are able to view the database table.**  
 Php-membership uses `password_verify()` when comparing a password sent from login.php with the password hash stored in the database.
