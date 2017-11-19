@@ -1,4 +1,5 @@
 <?php
+//credentials for connecting to your database
 $host = 'localhost'; //database host
 $user = 'root'; //database username
 $pass = NULL; //database password

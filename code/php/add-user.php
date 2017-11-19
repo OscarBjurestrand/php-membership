@@ -1,4 +1,5 @@
 <?php @include 'connect.php' ?>
+<?php require_once('session.php') ?>
 <?php
 //change to safe character set
 mysqli_query($conn,'SET NAMES utf8mb4');
@@ -8,6 +9,8 @@ $post_username = $_POST['Username'];
 $post_password = $_POST['Password'];
 
 //secure the username and password
+$post_username = stripslashes($post_username);
+$post_password = stripslashes($post_password);
 $post_username = mysqli_real_escape_string($conn, $post_username);
 $post_password = mysqli_real_escape_string($conn, $post_password);
 

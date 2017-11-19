@@ -24,11 +24,6 @@ Php-membership is able to:
   You are only able to visit members-only webpages if you are logged in as an existing user.  
 - Check if an user is logged in.  
   Php-membership checks if you are logged in with an existing user before letting you visit a members-only webpage.  
-- Use different types of memberships (type 1, type 2, administrator).  
-  Php-membership will be able to use three different types of users, type 1, type 2, and administrator.  
-  Type 1 users will only have basic privileges.  
-  Type 2 users will have more privileges than type 1 but less than an administrator.  
-  Administrators are able to delete any user from the database and change other user types.  
   
 # Installation  
   

@@ -1,3 +1,5 @@
+<?php @include 'connect.php' ?>
+<?php require_once('session.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +15,6 @@
 			</form>
 	</fieldset>
 	<p>Not registred?</p>
-	<a href="index.php">Register</a>
+	<a href="register.php">Register</a>
 </body>
 </html>
