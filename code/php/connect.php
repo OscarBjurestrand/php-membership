@@ -16,7 +16,7 @@ $dbname = 'users'; //database name
 $conn = new mysqli($host, $user, $pass, $dbname);
 
 //check if the server has at least PHP 5.0.0 installed
-if (strnatcmp(phpversion(),'5.0.0') >= 0)
+if (strnatcmp(phpversion(),'5.3.7') >= 0)
 {
 	 // Check connection
 	if (mysqli_connect_errno()) {
