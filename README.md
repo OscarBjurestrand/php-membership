@@ -31,7 +31,7 @@ Change these default credentials to fit your own:
 $host = 'localhost'; //database host
 $user = 'root'; //database username
 $pass = NULL; //database password
-$dbname = 'users'; //database name
+$dbname = 'membership'; //database name
 ```  
   
 **How to install php-membership on your server:**

@@ -3,7 +3,7 @@
 $host = 'localhost'; //database host
 $user = 'root'; //database username
 $pass = NULL; //database password
-$dbname = 'users'; //database name
+$dbname = 'membership'; //database name
 
 // Create connection
 $conn = new mysqli($host, $user, $pass, $dbname);
