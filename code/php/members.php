@@ -1,7 +1,7 @@
 <?php @include ('connect.php'); ?>
 <?php session_start(); ?>
 <?php
-//this page checks if an user is logged in or not
+//this page will only allow users that are logged in
 if (isset($_SESSION['username'])) {
 	echo "You are logged in, welcome to the members-only area, ". $_SESSION['username'] . ".<br>";
 	echo "<a href='logout.php'>Log out</a>";	
