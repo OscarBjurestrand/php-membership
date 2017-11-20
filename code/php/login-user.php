@@ -29,6 +29,18 @@ elseif (!ctype_alnum($post_username)) {
     echo "<a href='login.php'>Try again</a>";
 }
 else {
-    echo "everything was valid and here should be a prepared statement";
+    /* Prepared statement, stage 1: prepare */
+    if (!($stmt = mysqli_prepare($conn, "SELECT Passowrd FROM users WHERE Username = (?)"))) {
+    echo "Prepare failed: (" . $stmt->errno . ") " . $stmt->error;
+    }
+
+    /* Prepared statement, stage 2: bind and execute */
+    if (!$stmt->bind_param('s', $post_username)) {
+        echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+    }
+
+    if($stmt->execute()) {
+        echo "string";
+    }
 }
 ?>
