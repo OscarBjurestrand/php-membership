@@ -84,5 +84,5 @@ Php-membership uses `password_verify()` when comparing a password sent from logi
   
 ### Resources
 - [What is SQL-injection?](https://stackoverflow.com/questions/601300/what-is-sql-injection)
-- [Bobby Tables: A guide to preventing SQL injection](http://bobby-tables.com/)
-- [How attackers can get arount mysqli_real_escape_string()](https://stackoverflow.com/questions/5741187/sql-injection-that-gets-around-mysql-real-escape-string)
+- [Bobby Tables: A guide to preventing SQL injection.](http://bobby-tables.com/)
+- [How attackers can get around mysqli_real_escape_string().](https://stackoverflow.com/questions/5741187/sql-injection-that-gets-around-mysql-real-escape-string)
