@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Register user</title>
+	<title>Register</title>
 </head>
 <body>
 	<div style="display: inline-block;">
