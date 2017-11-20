@@ -6,7 +6,7 @@
 	<title>Welcome!</title>
 </head>
 <body>
-	<h1>Welcome to php-membership</h1>
+	<h1>Welcome to php-membership!</h1>
 	<p><a href="members.php">Members-only area</a></p>
 	<p><a href="login.php">Login</a> or <a href="register.php">Register an user</a>.</p>
 </body>
