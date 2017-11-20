@@ -32,17 +32,17 @@ elseif (!ctype_alnum($post_username)) {
     echo "<a href='login.php'>Try again</a>";
 }
 else {
-	/* Prepared statement, stage 1: prepare */
+	//preparing statement
 	if (!($stmt = mysqli_prepare($conn, "SELECT Username FROM users WHERE Username = (?)"))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
 	}
 
-	/* Prepared statement, stage 2: bind and execute */
+	//binding statement
 	if (!$stmt->bind_param('s', $post_username)) {
 	    echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
 	}
 
-	//check if username exists or not
+	//execute statement
 	if ($stmt->execute()) {
 
 		//if the statement fetches anything but zero, then another user with the same username exists
@@ -54,12 +54,12 @@ else {
 		}
 	    else
 	    {
-	    	/* Prepared statement, stage 1: prepare */
+	    	//username was unique, prepare statement for inserting user
 			if (!($stmt = mysqli_prepare($conn, "INSERT INTO users (`Username`, `Password`) VALUES ((?), (?))"))) {
 		    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
 			}
 
-			/* Prepared statement, stage 2: bind and execute */
+			//binding statement
 			if (!$stmt->bind_param('ss', $post_username, $hashed_post_password)) {
 			    echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
 			}
@@ -67,7 +67,7 @@ else {
 	    	//check if the query was successful and insert username and hashed password to database
 			if ($stmt->execute()) {
 			 	echo "<p>User was succesfully created</p>";
-			 	echo "<a href='login.php'>Go to login</a>";
+			 	echo "<a href='login.php'Login</a> or <a href'index.php'>Go back to homepage</a>.";
 			 } 
 			 else {
 			 	echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
