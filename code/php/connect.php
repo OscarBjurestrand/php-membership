@@ -19,7 +19,7 @@ if (strnatcmp(phpversion(),'5.3.7') >= 0)
 }
 else
 {
-  echo '<h1>Your php version is not supported by php-membership.</h1>';
+  echo '<h1>Your php version is not supported by php-membership!</h1>';
   echo "Your php version is: " . phpversion() . ".";
   echo "You need at least PHP 5.0.0 in order to run php-membership.";
 }
