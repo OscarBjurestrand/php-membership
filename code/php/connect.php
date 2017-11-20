@@ -1,10 +1,3 @@
-<?php 
-/*
-MIT License
-Copyright (c) 2017 Oscar Bjurestrand
-https://github.com/OscarBjurestrand/php-membership/blob/master/LICENSE
-*/
- ?>
 <?php
 //credentials for connecting to your database
 $host = 'localhost'; //database host

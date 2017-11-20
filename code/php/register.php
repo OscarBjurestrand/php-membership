@@ -1,10 +1,3 @@
-<?php 
-/*
-MIT License
-Copyright (c) 2017 Oscar Bjurestrand
-https://github.com/OscarBjurestrand/php-membership/blob/master/LICENSE
-*/
- ?>
 <?php @include 'connect.php' ?>
 <?php require_once('session.php') ?>
 <!DOCTYPE html>
