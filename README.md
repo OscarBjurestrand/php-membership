@@ -81,3 +81,7 @@ An user will look something like this in the database:
   
 **This prevents an attacker from retrieving passwords even if they are able to view the database table.**  
 Php-membership uses `password_verify()` when comparing a password sent from login.php with the password hash stored in the database.  
+  
+### Resources
+- [What is SQL-injection?](https://stackoverflow.com/questions/601300/what-is-sql-injection)
+- [Bobby Tables: A guide to preventing SQL injection](http://bobby-tables.com/)
