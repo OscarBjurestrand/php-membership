@@ -21,6 +21,6 @@ else
 {
   echo '<h1>Your php version is not supported by php-membership!</h1>';
   echo "Your php version is: " . phpversion() . ".";
-  echo "You need at least PHP 5.0.0 in order to run php-membership.";
+  echo "You need at least PHP 5.3.7 in order to run php-membership.";
 }
 ?>
