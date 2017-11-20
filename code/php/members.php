@@ -1,9 +1,9 @@
-<<?php @include 'connect.php' ?>
-<?php 
+<?php @include ('connect.php'); ?>
+<?php session_start(); ?>
+<?php
 //this page checks if an user is logged in or not
-session_start();
-if (isset($_SESSION['session_username'])) {
-	echo "You are logged in, welcome to the members-only area, ". $_SESSION['session_username'] . ".<br>";
+if (isset($_SESSION['username'])) {
+	echo "You are logged in, welcome to the members-only area, ". $_SESSION['username'] . ".<br>";
 	echo "<a href='logout.php'>Log out</a>";	
 }
 else {

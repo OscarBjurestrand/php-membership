@@ -1,5 +1,5 @@
-<?php @include 'connect.php' ?>
-<?php require('session.php') ?>
+<?php @include('connect.php') ?>
+<?php @include('session.php'); ?>
 <?php
 //change to safe character set
 mysqli_query($conn,'SET NAMES utf8mb4');
@@ -30,8 +30,8 @@ elseif (!ctype_alnum($post_username)) {
 }
 else {
     /* Prepared statement, stage 1: prepare */
-    if (!($stmt = mysqli_prepare($conn, "SELECT Passowrd FROM users WHERE Username = (?)"))) {
-    echo "Prepare failed: (" . $stmt->errno . ") " . $stmt->error;
+    if (!($stmt = mysqli_prepare($conn, "SELECT Password FROM users WHERE Username = (?)"))) {
+    echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     }
 
     /* Prepared statement, stage 2: bind and execute */
@@ -39,8 +39,24 @@ else {
         echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
     }
 
-    if($stmt->execute()) {
-        echo "string";
+    //check if username exists or not
+    if ($stmt->execute()) {
+
+        $result = $stmt->get_result();
+        $stmt->free_result();
+        $stmt->close();
+
+        while ($row = $result->fetch_array(MYSQLI_NUM)) 
+        {
+            if ($post_password == password_verify($post_password, $row[0])) {
+                $_SESSION['username'] = $post_username;
+                $_SESSION['loggedin'] = true;
+                header('Location: members.php');
+            }
+        }
+    }
+    else {
+        echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
     }
 }
 ?>

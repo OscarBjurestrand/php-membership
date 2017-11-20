@@ -4,7 +4,4 @@ session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	header('Location: members.php');
 }
-else {
-	echo "<!-- this is displayed when an user is not logged in -->";
-}
- ?>
+?>
