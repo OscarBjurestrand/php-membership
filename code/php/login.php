@@ -8,7 +8,7 @@
 <body>
 	<fieldset style="display: inline;">
 		<legend>Login</legend>
-			<form action="login-user.php" method="post">
+			<form action="login-user.php" method="post" autocomplete="off">
 				<input type="text" name="Username" placeholder="Username" autofocus="" pattern="[a-zA-Z0-9-]+" title="Only letters and numbers are allowed." required="">
 				<input type="password" name="Password" placeholder="Password" required="">
 				<input type="submit">
