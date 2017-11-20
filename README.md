@@ -2,7 +2,7 @@
 [Releases](https://github.com/OscarBjurestrand/php-membership/releases) | [Functionallity](#functionallity) | [Installation](#installation) | [Requirements](#requirements) | [Security](#security) | [License](https://github.com/OscarBjurestrand/php-membership/blob/master/LICENSE)  
 
 A website with member areas? Easy.  
-A website with _secure_ member areas? Not so easy...  
+A website with _secure_ member areas? Not very easy...  
   
 Php-membership is an open-source project that provides a simple, secure, and scalable membership system for your website.
 This system is 100% secure and it validates all data that is sent from the client.    
