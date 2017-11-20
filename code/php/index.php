@@ -1,5 +1,5 @@
-<?php @include 'connect.php' ?>
-<?php require_once('session.php') ?>
+<?php @include ('connect.php'); ?>
+<?php require_once('session.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
