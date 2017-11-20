@@ -83,6 +83,10 @@ An user will look something like this in the database:
 Php-membership uses `password_verify()` when comparing a password sent from login.php with the password hash stored in the database.  
   
 ### Resources
+- [The pattern attribute.](https://www.w3schools.com/tags/att_input_pattern.asp)
+- [The required attribute.](https://www.w3schools.com/tags/att_input_required.asp)
 - [What is SQL-injection?](https://stackoverflow.com/questions/601300/what-is-sql-injection)
 - [Bobby Tables: A guide to preventing SQL injection.](http://bobby-tables.com/)
 - [How attackers can get around mysqli_real_escape_string().](https://stackoverflow.com/questions/5741187/sql-injection-that-gets-around-mysql-real-escape-string)
+- [Prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
+- [PHP: pasword_hash()](http://php.net/manual/en/function.password-hash.php)
