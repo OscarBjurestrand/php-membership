@@ -65,7 +65,7 @@ Before making a query, php-membership tells your DBMS to expect the data to be s
 Un-quotes a quoted string before using it. 
 - `mysqli_real_escape_string()`  
 Removes any special characters in a string before using it.  
-- `empty()`  
+- `isset()`  
 Php-membership checks if the fields somehow ended up being sent empty after the client-side validation.  
 - `ctype_alnum()`  
 Php-membership checks if the data only contains letters and numbers.  

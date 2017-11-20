@@ -15,11 +15,11 @@ $post_username = mysqli_real_escape_string($conn, $post_username);
 $post_password = mysqli_real_escape_string($conn, $post_password);
 
 //checks if the username or password fields are empty
-if (empty($post_username)) {
+if (isset($post_username)) {
     echo "<p>The username field cannot be empty!</p>";
     echo "<a href='register.php'>Return</a>";
 }
-elseif (empty($post_password)) {
+elseif (isset($post_password)) {
     echo "<p>The password field cannot be empty!</p>";
     echo "<a href='register.php'>Return</a>";
 }
@@ -55,6 +55,10 @@ else {
                 $_SESSION['username'] = $post_username;
                 $_SESSION['loggedin'] = true;
                 header('Location: members.php');
+            }
+            else {
+                echo "<p>Invalid password or username.</p>";
+                echo "<a href='login.php'>Try again</a>";
             }
         }
     }
