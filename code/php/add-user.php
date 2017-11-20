@@ -18,11 +18,11 @@ $post_password = mysqli_real_escape_string($conn, $post_password);
 $hashed_post_password = password_hash($post_password, PASSWORD_DEFAULT);
 
 //checks if the username or password fields are empty.
-if (isset($post_username)) {
+if (!isset($post_username)) {
 	echo "<p>The username field cannot be empty!</p>";
 	echo "<a href='register.php'>Return</a>";
 }
-elseif (isset($post_password)) {
+elseif (!isset($post_password)) {
 	echo "<p>The password field cannot be empty!</p>";
 	echo "<a href='register.php'>Return</a>";
 }
@@ -67,7 +67,7 @@ else {
 	    	//check if the query was successful and insert username and hashed password to database
 			if ($stmt->execute()) {
 			 	echo "<p>User was succesfully created</p>";
-			 	echo "<a href='login.php'Login</a> or <a href'index.php'>Go back to homepage</a>.";
+			 	echo "<a href='login.php'>Login</a> or <a href='index.php'>Go back to homepage</a>.";
 			 } 
 			 else {
 			 	echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
