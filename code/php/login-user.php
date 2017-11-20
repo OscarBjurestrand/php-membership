@@ -29,25 +29,28 @@ elseif (!ctype_alnum($post_username)) {
     echo "<a href='login.php'>Try again</a>";
 }
 else {
-    /* Prepared statement, stage 1: prepare */
+    //prepare stae,emt for grabbing password hash that matches $post_username
     if (!($stmt = mysqli_prepare($conn, "SELECT Password FROM users WHERE Username = (?)"))) {
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
     }
 
-    /* Prepared statement, stage 2: bind and execute */
+    //binding statement
     if (!$stmt->bind_param('s', $post_username)) {
         echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
     }
 
-    //check if username exists or not
+    //execute statement
     if ($stmt->execute()) {
 
+        //get query result and assign it to $result
         $result = $stmt->get_result();
         $stmt->free_result();
         $stmt->close();
 
+        //fetch the result array and assign it to $row
         while ($row = $result->fetch_array(MYSQLI_NUM)) 
         {
+            //see if the passwords matched
             if ($post_password == password_verify($post_password, $row[0])) {
                 $_SESSION['username'] = $post_username;
                 $_SESSION['loggedin'] = true;
