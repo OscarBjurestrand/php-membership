@@ -56,9 +56,7 @@ else {
             if (password_verify($post_password, $row[0])) {
                 $_SESSION['username'] = $post_username;
                 $_SESSION['loggedin'] = true;
-                echo $row[0];
-                echo $post_password;
-                #header('Location: members.php');
+                header('Location: members.php');
             }
             else {
                 echo "<p>Invalid password or username.</p>";
