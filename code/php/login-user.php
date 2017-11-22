@@ -15,11 +15,11 @@ $post_username = mysqli_real_escape_string($conn, $post_username);
 $post_password = mysqli_real_escape_string($conn, $post_password);
 
 //checks if the username or password fields are empty
-if (!isset($post_username)) {
+if (strlen($post_username) === 0) {
     echo "<p>The username field cannot be empty!</p>";
     echo "<a href='register.php'>Return</a>";
 }
-elseif (!isset($post_password)) {
+elseif (strlen($post_password) === 0) {
     echo "<p>The password field cannot be empty!</p>";
     echo "<a href='register.php'>Return</a>";
 }
@@ -47,20 +47,26 @@ else {
         $stmt->free_result();
         $stmt->close();
 
-        //fetch the result array and assign it to $row
-        while ($row = $result->fetch_array(MYSQLI_NUM)) 
-        {
-            //see if the passwords matched
-            if ($post_password == password_verify($post_password, $row[0])) {
+        $row = $result->fetch_array(MYSQLI_NUM);
+        if (!isset($row[0])) {
+            echo "<p>Invalid password or username.</p>";
+            echo "<a href='login.php'>Try again</a>";
+        }
+        else {
+            if (password_verify($post_password, $row[0])) {
                 $_SESSION['username'] = $post_username;
                 $_SESSION['loggedin'] = true;
-                header('Location: members.php');
+                echo $row[0];
+                echo $post_password;
+                #header('Location: members.php');
             }
             else {
                 echo "<p>Invalid password or username.</p>";
                 echo "<a href='login.php'>Try again</a>";
             }
+
         }
+
     }
     else {
         echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;

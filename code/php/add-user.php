@@ -18,11 +18,11 @@ $post_password = mysqli_real_escape_string($conn, $post_password);
 $hashed_post_password = password_hash($post_password, PASSWORD_DEFAULT);
 
 //checks if the username or password fields are empty.
-if (!isset($post_username)) {
+if (strlen($post_username) === 0) {
 	echo "<p>The username field cannot be empty!</p>";
 	echo "<a href='register.php'>Return</a>";
 }
-elseif (!isset($post_password)) {
+elseif (strlen($post_password) === 0) {
 	echo "<p>The password field cannot be empty!</p>";
 	echo "<a href='register.php'>Return</a>";
 }
