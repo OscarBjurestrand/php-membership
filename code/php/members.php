@@ -1,27 +1,13 @@
-<?php @include 'connect.php' ?>
-<?php 
-
-$query = "SELECT Password FROM users WHERE Username = '$_POST[Username]'";
-
-/* get hash from database */
-if ($result = $conn->query($query)) {
-
-    /* fetch object array */
-    while ($row = $result->fetch_row()) {
-        $fetched_hash = $row[0];
-    }
-
-    /* free result set */
-    $result->close();
-}
-
-/* compare user-input password with correct password */
-if ($_POST['Password'] == password_verify($_POST['Password'], $fetched_hash)) {
-	echo "<p>You successfully logged in!</p>";
-	echo "<a href='index.php'>Register another user</a>";
+<?php @include ('connect.php'); ?>
+<?php session_start(); ?>
+<?php
+//this page will only allow users that are logged in
+if (isset($_SESSION['username'])) {
+	echo "You are logged in, welcome to the members-only area, ". $_SESSION['username'] . ".<br>";
+	echo "<a href='logout.php'>Log out</a>";	
 }
 else {
-	echo "<p>Incorrect username or password.</p>";
-	echo "<a href='login.php'>Try again</a>";
+	echo "You can't view this page without logging in. <br>";
+	echo "<a href='login.php'>Log in</a> or <a href='register.php'>Register</a>";
 }
 ?>
